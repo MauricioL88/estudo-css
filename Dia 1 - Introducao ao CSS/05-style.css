@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 3px;
+    color: navy;
+}
+
+body {
+    background-color: linen;
+    border: solid 3px goldenrod;
+}
+
+h1,
+h2 {
+    color: darkred;
+    text-align: center;
+}

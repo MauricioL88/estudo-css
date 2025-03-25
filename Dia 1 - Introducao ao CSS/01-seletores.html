@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+    <style>
+        /* Seletor Universal */
+        * {
+            text-align: center;
+            color: darkblue;
+            /* margin: 0; */
+            padding: 0;
+        }
+
+        /* Estilizando um seletor de uma forma direta */
+        p {
+            text-align: center;
+            color: red;
+        }
+
+        /* Estilizando por "id" */
+        #para1 {
+            text-align: center;
+            color: blue;
+        }
+
+        /* Estilizando por "classe" */
+        .classeExemplo {
+            text-align: center;
+            color: darkslategrey;
+        }
+
+        /* Especificando elementos que são definido por uma classe */
+        p.right {
+            text-align: right;
+            color: goldenrod;
+        }
+        
+        /* Especificando elementos que são definido por duas classes */
+        p.centro {
+            text-align: center;
+        }
+
+        p.grande {
+            font-size: 300%;
+        }
+
+        /* Seletor de agrupamento */
+        h1, h2 {
+            margin: 3%;
+            padding: 2%;
+            text-align: center;
+            border: 2px solid goldenrod;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Seletores</h1>
+    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam optio corporis esse neque nostrum sint voluptatum accusamus unde, impedit voluptate itaque iste fugit pariatur laudantium distinctio perferendis qui ipsam dolorem?</h2>
+    <p>Exemplo de estilização por seletor (parágrafo).</p>
+    <p id="para1">Exemplo de estilização por "ID".</p>
+    <p class="classeExemplo">Exemplo de estilização por "Classe".</p>
+    <p class="right">Exemplo de estilização de um elemento específico definido por uma classe.</p>
+    <p class="centro grande">Exemplo de estilização de um elemento específico definido por duas classes</p>
+</body>
+</html>
