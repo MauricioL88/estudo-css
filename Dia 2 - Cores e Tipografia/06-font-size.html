@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Size</title>
+    <style>
+        * {
+            margin: 0;
+            background-color: linen;
+        }
+
+        body {
+            font-size: 100%;
+        }
+
+        section {
+            border: solid 2px goldenrod;
+            padding: 8px;            
+            margin-top: 5px;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+
+        h2 {
+            padding: 5px;
+            margin: 4px;
+            border: solid 2px dodgerblue;
+            text-align: center;
+            background-color: tomato;
+            color: whitesmoke;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tamanho do texto em pixels -->
+    <section>
+        <h2 style="font-size: 40px;">TEXTO 1</h2>
+        <h2 style="font-size: 30px;">TEXTO 2</h2>
+        <h2 style="font-size: 14px;">TEXTO 3</h2>
+    </section>
+
+    <!-- Tamanho do texto em ".em" -->
+    <section>
+        <h2 style="font-size: 2.5em;">TEXTO 1</h2> <!-- 40px /16 = 2.5em -->
+        <h2 style="font-size: 1.875em;">TEXTO 2</h2> <!-- 30px /16 = 1.875em -->
+        <h2 style="font-size: 0.875em;">TEXTO 3</h2> <!-- 14px /16 = 0.875em -->
+    </section>
+    <!-- Tamanho de fonte responsiva -->
+    <section>
+        <h2 style="font-size: 10vw;">EXEMPLO DE TEXTO</h2>
+    </section>
+</body>
+
+</html>
