@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Listas</h1>
+    <h2>Propriedades do tipo de Listas</h2>
+    <p>Exemplo de listas desordenadas:</p>
+    <ul style="list-style-type: circle;">
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Coca-Cola</li>
+    </ul>
+    <ul style="list-style-type: square;">
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Coca-Cola</li>
+    </ul>
+    <p>Exemplo de listas ordenadas:</p>
+    <ol style="list-style-type: upper-roman;">
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Coca-Cola</li>
+    </ol>
+    <ol style="list-style-type: lower-alpha;">
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Coca-Cola</li>
+    </ol>
+    <h2>Propriedade <code>list-style-image</code></h2>
+    <p>A propriedade <code>list-style-image</code> especifica uma imagem como marcador</p>
+    <ul style="list-style-image: url(05-img/images-square-6px.jpg);">
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Coca-Cola</li>
+    </ul>
+    <h2>Posição dos marcadores de itens da lista</h2>
+    <p>Propriedade <code>list-style-position</code> especifica a posição dos marcadores da lista</p>
+    <p>Externo:</p>
+    <ul style="list-style-position: outside;">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sint. Rem praesentium quo placeat cum
+            nesciunt consequatur consequuntur et aspernatur. Ipsam officia explicabo rerum reprehenderit quaerat fuga
+            iusto! Sapiente, facere!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sint. Rem praesentium quo placeat cum
+            nesciunt consequatur consequuntur et aspernatur. Ipsam officia explicabo rerum reprehenderit quaerat fuga
+            iusto! Sapiente, facere!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sint. Rem praesentium quo placeat cum
+            nesciunt consequatur consequuntur et aspernatur. Ipsam officia explicabo rerum reprehenderit quaerat fuga
+            iusto! Sapiente, facere!</li>
+    </ul>
+
+    <p>Interno:</p>
+    <ul style="list-style-position: inside;">
+        <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere iure pariatur cupiditate sit
+            voluptatibus dicta dignissimos quaerat nesciunt. Officia, eaque fuga nesciunt dignissimos ad laboriosam
+            laudantium doloremque nulla! Magni.
+        </li>
+        <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere iure pariatur cupiditate sit
+            voluptatibus dicta dignissimos quaerat nesciunt. Officia, eaque fuga nesciunt dignissimos ad laboriosam
+            laudantium doloremque nulla! Magni.
+        </li>
+        <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere iure pariatur cupiditate sit
+            voluptatibus dicta dignissimos quaerat nesciunt. Officia, eaque fuga nesciunt dignissimos ad laboriosam
+            laudantium doloremque nulla! Magni.
+        </li>
+    </ul>
+    <br>
+    <h2>Removendo as configurações padrão</h2>
+    <p>Propriedade <code>list-style-type: none</code> pode ser usados para remover os marcadores das listas. Note que na
+        lista existe margens e espaçamentos por padrão, para remové-los, adicione <code>margin: 0</code> e
+        <code>padding: 0</code> à <code>ul</code> ou <code>ol</code>.
+    </p>
+    <p>Lista padrão:</p>
+    <ul>
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Coca-Cola</li>
+    </ul>
+    <p>Lista sem marcadores, margin e espaçamento:</p>
+    <ul style="list-style-type: none; margin: 0; padding: 0;">
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Coca-Cola</li>
+    </ul>
+    <br>
+    <h2>Declaração abreviada das proriedades de uma lista</h2>
+    <p>Utiliza-se <code>list-style</code>:</p>
+    <p>Ordem de declaração: <code>list-style-type</code> (Tipo) / <code>list-style-position</code> (Posição) /
+        <code>list-style-image</code> (Imagem)
+    </p>
+    <ul style="list-style: square inside url(05-img/images-square-6px.jpg);">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ullam autem alias vero nesciunt doloremque
+            beatae distinctio laudantium recusandae laborum, tempore eligendi! Earum veritatis asperiores repudiandae
+            vel esse quibusdam minima.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ullam autem alias vero nesciunt doloremque
+            beatae distinctio laudantium recusandae laborum, tempore eligendi! Earum veritatis asperiores repudiandae
+            vel esse quibusdam minima.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ullam autem alias vero nesciunt doloremque
+            beatae distinctio laudantium recusandae laborum, tempore eligendi! Earum veritatis asperiores repudiandae
+            vel esse quibusdam minima.</li>
+    </ul>
+    <br>
+    <h2>Estilizando as listas com cores</h2>
+    <p>Estilo 1:</p>
+    <ol style="background: #ff9999; padding: 20px;">
+        <li style="background: #dde5e5; color: darkred; padding: 5px; margin-left: 35px;">Café</li>
+        <li style="background: #dde5e5; color: darkred; padding: 5px; margin-left: 35px;">Chá</li>
+        <li style="background: #dde5e5; color: darkred; padding: 5px; margin-left: 35px;">Coca-Cola</li>
+    </ol>
+    <p>Estilo 2:</p>
+    <ul style="background: #3399ff; padding: 20px;">
+        <li style="background: #cce5ff; color: darkblue; margin: 5px;">Café</li>
+        <li style="background: #cce5ff; color: darkblue; margin: 5px;">Chá</li>
+        <li style="background: #cce5ff; color: darkblue; margin: 5px;">Coca-Cola</li>
+    </ul>
+    <br>
+    <h2>Lista com a marcação de borda em vermelho</h2>
+    <ul style="border-left: 5px solid red; background-color: #f1f1f1; list-style-type: none; padding: 10px 20px;">
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Coca-Cola</li>
+    </ul>
+</body>
+
+</html>

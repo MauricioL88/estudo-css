@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration</title>
+    <style>
+        * {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text Decoration</h1>
+    <h2>Text Decoration Line</h2>
+    <h4>Overline</h4>
+    <p style="text-decoration-line: overline;">TEXTO</p>
+    <h4>Line Through</h4>
+    <p style="text-decoration-line: line-through;">TEXTO</p>
+    <h4>Underline</h4>
+    <p style="text-decoration-line: underline;">TEXTO</p>
+    <h4>Overline Underline</h4>
+    <p style="text-decoration-line: overline underline;">TEXTO</p>
+    <br>
+    <h2>Especificando a cor para o Decoration Line</h2>
+    <h4>Overline</h4>
+    <p style="text-decoration-line: overline; text-decoration-color: red;">TEXTO</p>
+    <h4>Line Through</h4>
+    <p style="text-decoration-line: line-through; text-decoration-color: blue;">TEXTO</p>
+    <h4>Underline</h4>
+    <p style="text-decoration-line: underline; text-decoration-color: green;">TEXTO</p>
+    <h4>Overline Underline</h4>
+    <p style="text-decoration-line: overline underline; text-decoration-color: purple;">TEXTO</p>
+    <br>
+    <h2>Especificando o estilo para o Decoration Line</h2>
+    <p style="text-decoration-line: underline; text-decoration-style: solid;">TEXTO</p>
+    <p style="text-decoration-line: underline; text-decoration-style: double;">TEXTO</p>
+    <p style="text-decoration-line: underline; text-decoration-style: dotted;">TEXTO</p>
+    <p style="text-decoration-line: underline; text-decoration-style: dashed;">TEXTO</p>
+    <p style="text-decoration-line: underline; text-decoration-style: wavy;">TEXTO</p>
+    <p style="text-decoration-line: underline; text-decoration-color: red; text-decoration-style: wavy;">TEXTO</p>
+    <br>
+    <h2>Especificando espessura para o Decoration Line</h2>
+    <p style="text-decoration-line: underline; text-decoration-thickness: auto;">TEXTO</p>
+    <p style="text-decoration-line: underline; text-decoration-thickness: 5px;">TEXTO</p>
+    <p style="text-decoration-line: underline; text-decoration-thickness: 25%;">TEXTO</p>
+    <p
+        style="text-decoration-line: underline; text-decoration-color: red; text-decoration-style: double; text-decoration-thickness: 5px;">
+        TEXTO</p>
+    <br>
+    <h2>Propriedade de forma abreviada na declaração</h2>
+    <p style="text-decoration: underline;">TEXTO</p>
+    <p style="text-decoration: underline red;">TEXTO</p>
+    <p style="text-decoration: underline red double;">TEXTO</p>
+    <p style="text-decoration: underline red double 5px;">TEXTO</p>
+    <br>
+    <h2>Removendo um sublinhamento de um link</h2>
+    <p>Todos os links são sublinhados por padrão, para retirada, utiliza-se a propriedade <code>text-decoration: none</code>.</p>
+    <p><a href="" style="text-decoration: none;">LINK</a></p>
+</body>
+
+</html>
