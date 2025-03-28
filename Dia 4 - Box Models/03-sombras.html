@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <style>
+        /* Adicionando fontes do site da Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+        /* Após a adição, é necessário realizar a declaração conforme abaixo para o reconhecimento da fonte externa */
+        body {
+            font-family: 'Roboto Mono';
+            background-color: #f0f0f0;
+        }
+
+        .card {
+            border-left: 7px solid blue;
+            margin: 0 10px 40px 10px;
+            padding: 2px 0 10px 10px;
+            max-width: 700px;
+            max-height: 300px;
+            background-color: white;
+            /* Adicionando efeito de sombra no elemento */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SOMBRAS</h1>
+
+    <div class="card">
+        <h2>Efeito sombra no texto</h2>
+        <h3 style="text-shadow: 2px 2px;">EFEITO SOMBRA</h3>
+    </div>
+    <div class="card">
+        <h2>Cor na sombra</h2>
+        <h3 style="text-shadow: 2px 2px red; color: darkblue;">Cor na sombra</h3>
+    </div>
+    <div class="card">
+        <h2>Adicionando efeito borrão na sombra</h2>
+        <h3 style="text-shadow: 2px 2px 5px red; color: darkblue;">Efeito Borrão</h3>
+    </div>
+    <div class="card">
+        <h2>Sombra num texto na cor branca</h2>
+        <h3 style="color: white; text-shadow: 2px 2px 5px #000000;">Sombra no texto de cor branca</h3>
+    </div>
+    <div class="card">
+        <h2>Efeito sombra de neon brilhante</h2>
+        <h3 style="text-shadow: 0 0 4px #FF0000; color: darkblue;">Neon brilhante</h3>
+    </div>
+
+    <h2>Sombras Multiplas</h2>
+    <div class="card">
+        <h2>Neon Duplo</h2>
+        <h3 style="text-shadow: 0 0 3px #FF0000, 0 0 6px #0000FF">Neon Duplo</h3>
+    </div>
+
+    <div class="card">
+        <h2>Efeito de multipla sombras no texto na cor branca</h2>
+        <h3 style="color: white; text-shadow: 1px 1px 2px black, 0 0 23px blue, 0 0 5px darkblue;">Texto na cor branca
+        </h3>
+    </div>
+
+    <div class="card">
+        <h2>Borda simples sem criar sombra</h2>
+        <h3 style="color: coral; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Borda simples no texto</h3>
+    </div>
+
+
+</body>
+
+</html>
