@@ -1,0 +1,33 @@
+/* Adicionando fontes do site da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Após a adição, é necessário realizar a declaração conforme abaixo para o reconhecimento da fonte externa */
+body {
+    font-family: 'Roboto Mono';
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px darkgray;
+}
+
+.big-card {
+    border-left: 5px solid darkblue;
+    border-radius: 10px;
+    margin: 10% 8% 50% 8%;
+    padding: 2px 0 20px 20px;
+    max-width: 700px;
+    max-height: 400px;
+    background-color: white;
+    /* Adicionando efeito de sombra no elemento */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2 {
+    text-shadow: 1px 1px 5px darkblue, 0px 0px 3px darkred;
+}
+
