@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cor de Plano de Fundo</title>
+</head>
+
+<body style="background-color: lightcyan;">
+    <h1 style="background-color: green;">Exemplo de cor de fundo</h1>
+
+    <div style="background-color: lightblue;">
+        Isto é um texto dentro de um elemento div
+        <p style="background-color: yellow;">Este parágrado tem sua própria cor de fundo</p>
+        Estes elementos ainda estão no elemento div.
+    </div>
+    <br>
+    <!-- Opacidades -->
+    <h2>Opacidade</h2>
+    <h3>Caixas transparentes</h3>
+    <p>Quando usado a propriedade opacidade para adicionar transparência ao fundo de um elemento, todos elementos filho
+        se tornam transparentes também. Podendo difilcultar a leitura do texto dentro de um item totalmente
+        transparente.</p>
+    <div style="background-color: lightgreen;">
+        <h4 style="opacity: 0.1;">Opacidade 0.1</h4>
+    </div>
+    <div style="background-color: lightgreen;">
+        <h4  style="opacity: 0.3;">Opacidade 0.3</h4>
+    </div>
+    <div style="background-color: lightgreen;">
+        <h4 style="opacity: 0.6;">Opacidade 0.6</h4>
+    </div>
+    <div style="background-color: lightgreen;">
+        <h4>Opacidade 1 (Padrão)</h4>
+    </div>
+    <br>
+    <h2>Transparência usando o RGBA</h2>
+    <p>Resultado com  a propriedade opacidade:</p>
+    <div style="background: rgb(0, 128, 0); opacity: 0.1;">
+        <h3>10% opacidade</h3>
+    </div>
+    <div style="background: rgb(0, 128, 0); opacity: 0.3;">
+        <h3>30% opacidade</h3>
+    </div>
+    <div style="background: rgb(0, 128, 0); opacity: 0.6;">
+        <h3>60% opacidade</h3>
+    </div>
+    <div style="background: rgb(0, 128, 0); opacity: 1;">
+        <h3>Opaco</h3>
+    </div>
+    
+    <p>Resultado com RGBA:</p>
+    <div style="background: rgba(0, 128, 0, 0.1);">
+        <h3>10% opacidade</h3>
+    </div>
+    <div style="background: rgba(0, 128, 0, 0.3);">
+        <h3>30% opacidade</h3>
+    </div>
+    <div style="background: rgba(0, 128, 0, 0.6);">
+        <h3>60% opacidade</h3>
+    </div>
+    <div style="background: rgba(0, 128, 0);">
+        <h3>Padrão</h3>
+    </div>    
+</body>
+
+</html>
