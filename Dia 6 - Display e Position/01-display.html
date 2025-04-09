@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades do Display</title>
+    <link rel="stylesheet" href="./01-style.css">
+</head>
+
+<body>
+    <header>
+        <h1><code>display</code></h1>
+        <h2>É a propriedade mais importante do CSS para controle de layout</h2>
+        <p>Por padrão boa parte dos elemento HTML tem os valores de <code>block</code> e <code>inline</code> e a
+            propriedade <code>display</code> é utilizado para mudar esses comportamentos.</p>
+    </header>
+    <section class="nivel-bloco">
+        <h2>Elementos nível de bloco</h2>
+        <p>Um elemento nível de bloco sempre começa em uma nova linha e ocupa toda a largura disponível.</p>
+        <p>Exemplos de elementos com nível de bloco</p>
+        <ul>
+            <li><code>div</code></li>
+            <li><code>h1-h6</code></li>
+            <li><code>p</code></li>
+            <li><code>form</code></li>
+            <li><code>header</code></li>
+            <li><code>footer</code></li>
+            <li><code>section</code></li>
+        </ul>
+        <div class="borda">
+            <p>O elemento <code>div</code> é um elemento nível de bloco</p>
+        </div>
+    </section>
+
+    <section class="em-linha">
+        <h2>Elementos em linha</h2>
+        <p>É um elemento embutido que NÃO começa em uma nova linha e ocupa apenas a largura necessária.</p>
+        <p>Exemplos de elementos <code>inline</code>:</p>
+        <ul>
+            <li><code>span</code></li>
+            <li><code>a</code></li>
+            <li><code>img</code></li>
+        </ul>
+        <p>Este é <span class="borda">um elemento <code>span</code> embutido dentro de um parágrafo.</span></p>
+    </section>
+    <section class="displays">
+        <h2>Alguns valores da propriedade <code>display</code></h2>
+        <h3><code>block</code></h3>
+        <p>Exibe um elemento como um elemento de bloco</p>
+        <span class="bloco">A proriedade de <code>display</code> com</span> <span class="bloco">um valor de
+            <code>block</code> resulta em</span> <span class="bloco">uma quebra de linha entre cada elemento
+            <code>span</code>.</span>
+        <p>Exibição de tags <code>a</code> (links) como elemento em bloco</p>
+        <div>
+            <a href="#" class="bloco">HTML</a>
+            <a href="#" class="bloco">CSS</a>
+            <a href="#" class="bloco">Javascript</a>
+        </div>
+        <hr>
+        <h3><code>inline</code></h3>
+        <p>Exibe um elemento como elemento embutido</p>
+        <div>
+            <p>Exibindo uma lista de links como um menu horinzontal:</p>
+            <ul class="navegacao">
+                <li class="linha"><a href="#">HTML</a></li>
+                <li class="linha"><a href="#">CSS</a></li>
+                <li class="linha"><a href="#">Javascript</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

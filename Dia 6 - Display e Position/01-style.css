@@ -1,0 +1,34 @@
+code {
+    color: darkred;
+    font-weight: 700;
+}
+
+.borda {
+    margin-top: 5px;
+    border: 2px solid green;
+    padding-left: 15px;
+}
+
+.bloco {
+    display: block;
+    border: 2px solid green;
+    color: black;
+    padding-left: 10px;
+}
+
+.linha {
+    display: inline;
+    margin-right: 5px;
+}
+
+.navegacao {
+    border: 4px solid lightgreen;
+    width: 225px;
+    background-color: green;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}

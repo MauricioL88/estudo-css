@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Items</title>
+    <link rel="stylesheet" href="./06-style.css">
+</head>
+
+<body>
+    <h1>Flex-Items</h1>
+
+    <p>Os elmentos filhos diretos de um container flexível se tornam automaticamente <span>itens flexíveis</span>.</p>
+
+    <div class="container-flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <p>Seus valores:</p>
+    <ul>
+        <li><code>order</code></li>
+        <li><code>flex-grow</code></li>
+        <li><code>flex-shrink</code></li>
+        <li><code>flex-basis</code></li>
+        <li><code>flex</code></li>
+        <li><code>align-self</code></li>
+    </ul>
+    <br>
+    <hr>
+
+    <h4>Propriedade <code>order</code></h4>
+    <p>especifica a ordem dos itens flexíveis dentro container.</p>
+    <p>O primeiro item não precisa necessariamente aparecer como o primeiro no layout.</p>
+    <p><span>Exemplo:</span></p>
+
+    <div class="container-flex order">
+        <div style="order: 8">1</div>
+        <div style="order: 3">2</div>
+        <div style="order: 6">3</div>
+        <div style="order: 7">4</div>
+        <div style="order: 1">5</div>
+        <div style="order: 2">6</div>
+        <div style="order: 9">7</div>
+        <div style="order: 5">8</div>
+        <div style="order: 4">9</div>
+    </div>
+    <br>
+    <hr>
+
+    <h4>Propriedade <code>flex-grow</code></h4>
+    <p>Especifica o quanto um item crescerá em relação ao restante dos itens.</p>
+    <p><span>Exemplo:</span></p>
+
+    <div class="container-flex grow">
+        <div style="flex-grow: 1;">1</div>
+        <div style="flex-grow: 1;">2</div>
+        <div style="flex-grow: 8;">3</div>
+    </div>
+    <br>
+    <hr>
+    
+    <h4>Propriedade <code>flex-shrink</code></h4>
+    <p>Especifica o quanto um item encolherá em relação ao restante dos itens.</p>
+    <p><span>Exemplo:</span></p>
+
+    <div class="container-flex shrink">
+        <div>1</div>
+        <div style="flex-shrink: 0;">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <br>
+    <hr>
+    
+    <h4>Propriedade <code>flex</code></h4>
+    <p>É um atalho para as propriedades <code>flex-grow</code>, <code>flex-shrink</code> e <code>flex-basis</code>.</p>
+    <p><span>Exemplo:</span></p>
+
+    <div class="container-flex flex">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex: 0 0 200px;">3</div>
+        <div>4</div>
+    </div>
+    <br>
+    <hr>
+    
+    <h4>Propriedade <code>align-self</code></h4>
+    <p>Especifica o alinhamento do item selecionado dentro do container flexível</p>
+    <p>Ela substitui o alinhamento padrão definido pela propriedade pela container <code>align-items</code></p>
+    <p><span>Exemplo:</span></p>
+
+    <div class="container-flex align-self">
+        <div>1</div>
+        <div>2</div>
+        <div style="align-self: center;">3</div>
+        <div>4</div>
+    </div>
+    <br>
+    <hr>
+
+</body>
+
+</html>

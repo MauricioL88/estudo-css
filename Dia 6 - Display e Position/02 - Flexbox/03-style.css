@@ -1,0 +1,49 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+code {
+    font-family: monospace;
+    color: red;
+    font-weight: 800;
+    background-color: gainsboro;
+}
+
+.exemplo-card {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0 20px 0;
+}
+
+.saida {
+    display: flex;
+    justify-content: center;
+    background-color: DodgerBlue;
+}
+
+.saida>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.pre-saida {
+    background-color: white;
+    border-radius: 3px;
+    margin: 0 0 10px 0;
+    padding: 15px;
+}
+
+.p-titulo {
+    text-transform: uppercase;
+    font-weight: 300;
+}

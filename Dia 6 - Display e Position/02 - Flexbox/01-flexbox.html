@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        code {
+            color: red;
+            background-color: gainsboro;
+        }
+
+        span {
+            font-weight: bolder;
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: dodgerblue;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <p>É a abreviatura de um módulo de caixa flexível</p>
+    <p>É um método para arrumar os itens em linhas (rows) ou colunas (columns)</p>
+    <p>Torna mais fácil desenhar uma estrutra com layout responsível e flexível, sem a utilização de float ou
+        positioning</p>
+    <h2>Diferença entre Flexbox e Grid</h2>
+    <ul>
+        <li>O Flexbox deve ser usado para layouts unidimensionais, com linhas e colunas</li>
+        <li>O Grid deve ser usado para layouts bidimensionais, com linhas e colunas</li>
+    </ul>
+    <hr>
+
+    <h2>Módulo CSS Layout de caixa fléxível</h2>
+    <p>Antes exitiam 4 modos de layout:</p>
+    <ul>
+        <li>Block: para <<code>section</code>> de uma webpage.</li>
+        <li>Inline: para texto.</li>
+        <li>Table: para tabela de dados bidimensional.</li>
+        <li>Positioned: para uma posição explícita de um elemento.</li>
+    </ul>
+    <hr>
+
+    <h2>Componentes Flexbox</h2>
+    <p>Um flexbox sempre consiste em:</p>
+    <ul>
+        <li><span>Flex Container</span> - Elemento "Pai" (Container) <<code>div</code>></li>
+        <li><span>Flex Itens</span> - Itens dentro do container <<code>div</code>></li>
+    </ul>
+    <hr>
+    <h2>Um container flexível com três itens flexíveis</h2>
+    <p>Para começar usar o Flexbox, você precisa inicialmente definir um container flexível.</p>
+    <p>O container flex se torna flexível aplicando na propriedade <<code>display</code>> o <<code>flex</code>>.</p>
+    <br>
+    <p>O elemento abaixo representa um <span>flex container</span> (área em azul) com três <span>flex items</span>.</p>
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>Um layout flexível precisar ter um elemento pai cuja a propriedade <code>display</code> esteja apontando para o <code>flex</code></p>
+    <p>O elementos filhos diretos do container "Pai" se tornam automaticamente flexíveis.</p>
+
+</body>
+
+</html>

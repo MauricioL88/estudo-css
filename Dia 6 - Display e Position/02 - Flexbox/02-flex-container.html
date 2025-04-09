@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Flexível</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        code {
+            color: red;
+            font-weight: bold;
+            background-color: gainsboro;
+            font-family: monospace;
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: dodgerblue;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+            background-color: dodgerblue;
+            padding: 5px;
+        }
+
+        .flex-column>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        .flex-row-reverse {
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: dodgerblue;
+            padding: 5px;
+        }
+
+        .flex-row-reverse>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        .flex-column-reverse {
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: dodgerblue;
+            padding: 5px;
+        }
+        
+        .flex-column-reverse > div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        
+        .flex-nowrap {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: dodgerblue;
+            padding: 5px;
+        }
+        
+        .flex-nowrap > div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        
+        .flex-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: dodgerblue;
+            padding: 5px;
+        }
+        
+        .flex-wrap > div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        
+        .flex-wrap-reverse {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            background-color: dodgerblue;
+            padding: 5px;
+        }
+        
+        .flex-wrap-reverse > div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        
+        .flex-flow {
+            display: flex;
+            flex-flow: row wrap-reverse;
+            background-color: dodgerblue;
+            padding: 5px;
+        }
+        
+        .flex-flow > div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        .exemplo {
+            background-color: lightgray;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0 20px 0;
+        }
+
+        .resultado-exemplo {
+            background-color: white;
+            border-radius: 3px;
+            margin: 0 0 10px 0;
+            padding: 15px;
+        }
+
+        #titulo-3 {
+            margin-top: 0;
+            margin-bottom: 1px;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Container</h1>
+    <p>Como visto anteriormente, isto é um <em><span>flex container</span></em> com três <em><span>flex
+                items</span></em>:</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <br>
+    <hr>
+    <p>As propriedades para o flex container são:</p>
+    <ul>
+        <li><code>flex-direction</code></li>
+        <li><code>flex-wrap</code></li>
+        <li><code>flex-flow</code></li>
+        <li><code>justify-content</code></li>
+        <li><code>align-items</code></li>
+        <li><code>align-content</code></li>
+    </ul>
+    <br>
+    <hr>
+    <section>
+        <h2>Propriedade <em>Flex-Direction</em>:</h2>
+        <p>Especifica a direção de exibição dos <em><span>flex items</span></em> no <em><span>flex
+                    container</span></em>.</p>
+        <p>Pode conter um dos valores:</p>
+        <ul>
+            <li><code>row</code></li>
+            <li><code>column</code></li>
+            <li><code>row-reverse</code></li>
+            <li><code>column-reverse</code></li>
+        </ul>
+
+        <div class="exemplo">
+            <h3 id="titulo-3">Exemplo</h3>
+            <p><code>row</code> este é o valor padrão de quando é configurado o <code>flex</code> no
+                <code>display</code>.
+            </p>
+            <p>Resultado:</p>
+            <div class="resultado-exemplo">
+                <div class="flex-container">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="exemplo">
+            <h3 id="titulo-3">Exemplo</h3>
+            <p><code>column</code> exibe os <em><span>flex items</span></em> verticalmente (do topo para o fundo).</p>
+            <p>Resultado:</p>
+            <div class="resultado-exemplo">
+                <div class="flex-column">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="exemplo">
+            <h3 id="titulo-3">Exemplo</h3>
+            <p><code>row-reverse</code> exibe os <em><span>flex items</span></em> horizontalmente (da direita para a esquerda).</p>
+            <p>Resultado:</p>
+            <div class="resultado-exemplo">
+                <div class="flex-row-reverse">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="exemplo">
+            <h3 id="titulo-3">Exemplo</h3>
+            <p><code>column-reverse</code> exibe os <em><span>flex items</span></em> verticalmente (de baixo para cima).</p>
+            <p>Resultado:</p>
+            <div class="resultado-exemplo">
+                <div class="flex-column-reverse">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <section>
+        <h2><em>Flex-Wrap</em></h2>
+        <p>Propriedade que especifica se os <em><span>flex items</span></em> devem ser quebrados ou não, se não houver espaço suficiente para eles em uma <em><span>flex-line</span></em>.</p>
+        <p>Pode conter um dos valores:</p>
+        <ul>
+            <li><code>nowrap</code></li>
+            <li><code>wrap</code></li>
+            <li><code>wrap-reverse</code></li>
+        </ul>
+
+        <div class="exemplo">
+            <h3 id="titulo-3">Exemplo</h3>
+            <p><code>nowrap</code> especifica que os <em><span>flex items</span></em> não quebrarão (valor padrão).</p>
+            <p>Resultado:</p>
+            <div class="resultado-exemplo">
+                <div class="flex-nowrap">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="exemplo">
+            <h3 id="titulo-3">Exemplo</h3>
+            <p><code>wrap</code> especifica que os <em><span>flex items</span></em> serão quebrados se necessário.</p>
+            <p>Resultado:</p>
+            <div class="resultado-exemplo">
+                <div class="flex-wrap">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="exemplo">
+            <h3 id="titulo-3">Exemplo</h3>
+            <p><code>wrap-reverse</code> especifica que os <em><span>flex items</span></em> serão quebrados se necessário, em uma ordem reversa.</p>
+            <p>Resultado:</p>
+            <div class="resultado-exemplo">
+                <div class="flex-wrap-reverse">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <hr>
+
+    <section>
+        <h2><em>Flex-Flow</em></h2>
+        <p>Propriedade é um atalho que manipula as propriedade de <code>flex-direction</code> e <code>flex-wrap</code>.</p>
+        <div class="exemplo">
+            <h3 id="titulo-3">Exemplo</h3>
+            <p>Resultado:</p>
+            <div class="resultado-exemplo">
+                <div class="flex-flow">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
